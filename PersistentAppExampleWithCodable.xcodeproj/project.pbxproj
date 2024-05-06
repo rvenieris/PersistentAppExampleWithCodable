@@ -11,6 +11,14 @@
 		BB715C7B2BE6F6E0005481A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB715C7A2BE6F6E0005481A7 /* ContentView.swift */; };
 		BB715C7D2BE6F6E3005481A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB715C7C2BE6F6E3005481A7 /* Assets.xcassets */; };
 		BB715C802BE6F6E3005481A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB715C7F2BE6F6E3005481A7 /* Preview Assets.xcassets */; };
+		BB715C892BE6F740005481A7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB715C882BE6F740005481A7 /* HomeView.swift */; };
+		BB715C8E2BE6F764005481A7 /* ApplicationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB715C8A2BE6F763005481A7 /* ApplicationData.swift */; };
+		BB715C8F2BE6F764005481A7 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB715C8B2BE6F763005481A7 /* Pet.swift */; };
+		BB715C912BE6F764005481A7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB715C8D2BE6F764005481A7 /* Person.swift */; };
+		BB715C942BE6F777005481A7 /* WeakObjectSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB715C922BE6F777005481A7 /* WeakObjectSet.swift */; };
+		BB715C972BE702DF005481A7 /* CodableExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = BB715C962BE702DF005481A7 /* CodableExtensions */; };
+		BB715CB62BE91FB7005481A7 /* PetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB715CB52BE91FB7005481A7 /* PetDetailView.swift */; };
+		BB715CB82BE923DF005481A7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB715CB72BE923DF005481A7 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,13 @@
 		BB715C7A2BE6F6E0005481A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB715C7C2BE6F6E3005481A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB715C7F2BE6F6E3005481A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB715C882BE6F740005481A7 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BB715C8A2BE6F763005481A7 /* ApplicationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationData.swift; sourceTree = "<group>"; };
+		BB715C8B2BE6F763005481A7 /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		BB715C8D2BE6F764005481A7 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		BB715C922BE6F777005481A7 /* WeakObjectSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakObjectSet.swift; sourceTree = "<group>"; };
+		BB715CB52BE91FB7005481A7 /* PetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailView.swift; sourceTree = "<group>"; };
+		BB715CB72BE923DF005481A7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB715C972BE702DF005481A7 /* CodableExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +67,9 @@
 		BB715C772BE6F6E0005481A7 /* PersistentAppExampleWithCodable */ = {
 			isa = PBXGroup;
 			children = (
-				BB715C782BE6F6E0005481A7 /* PersistentAppExampleWithCodableApp.swift */,
+				BB715C862BE6F700005481A7 /* View */,
 				BB715C7A2BE6F6E0005481A7 /* ContentView.swift */,
+				BB715C872BE6F70E005481A7 /* Model */,
 				BB715C7C2BE6F6E3005481A7 /* Assets.xcassets */,
 				BB715C7E2BE6F6E3005481A7 /* Preview Content */,
 			);
@@ -65,6 +82,36 @@
 				BB715C7F2BE6F6E3005481A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB715C862BE6F700005481A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB715C782BE6F6E0005481A7 /* PersistentAppExampleWithCodableApp.swift */,
+				BB715C882BE6F740005481A7 /* HomeView.swift */,
+				BB715CB52BE91FB7005481A7 /* PetDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB715C872BE6F70E005481A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB715C8A2BE6F763005481A7 /* ApplicationData.swift */,
+				BB715C8D2BE6F764005481A7 /* Person.swift */,
+				BB715C8B2BE6F763005481A7 /* Pet.swift */,
+				BB715C932BE6F777005481A7 /* Helpers */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB715C932BE6F777005481A7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BB715C922BE6F777005481A7 /* WeakObjectSet.swift */,
+				BB715CB72BE923DF005481A7 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +130,9 @@
 			dependencies = (
 			);
 			name = PersistentAppExampleWithCodable;
+			packageProductDependencies = (
+				BB715C962BE702DF005481A7 /* CodableExtensions */,
+			);
 			productName = PersistentAppExampleWithCodable;
 			productReference = BB715C752BE6F6E0005481A7 /* PersistentAppExampleWithCodable.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +161,9 @@
 				Base,
 			);
 			mainGroup = BB715C6C2BE6F6E0005481A7;
+			packageReferences = (
+				BB715C952BE702DF005481A7 /* XCRemoteSwiftPackageReference "CodableExtensions" */,
+			);
 			productRefGroup = BB715C762BE6F6E0005481A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB715C8F2BE6F764005481A7 /* Pet.swift in Sources */,
+				BB715CB82BE923DF005481A7 /* Extensions.swift in Sources */,
+				BB715C942BE6F777005481A7 /* WeakObjectSet.swift in Sources */,
+				BB715C892BE6F740005481A7 /* HomeView.swift in Sources */,
 				BB715C7B2BE6F6E0005481A7 /* ContentView.swift in Sources */,
+				BB715C912BE6F764005481A7 /* Person.swift in Sources */,
+				BB715CB62BE91FB7005481A7 /* PetDetailView.swift in Sources */,
 				BB715C792BE6F6E0005481A7 /* PersistentAppExampleWithCodableApp.swift in Sources */,
+				BB715C8E2BE6F764005481A7 /* ApplicationData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +404,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB715C952BE702DF005481A7 /* XCRemoteSwiftPackageReference "CodableExtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rvenieris/CodableExtensions";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB715C962BE702DF005481A7 /* CodableExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB715C952BE702DF005481A7 /* XCRemoteSwiftPackageReference "CodableExtensions" */;
+			productName = CodableExtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB715C6D2BE6F6E0005481A7 /* Project object */;
 }
