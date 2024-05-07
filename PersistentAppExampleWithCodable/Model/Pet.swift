@@ -14,7 +14,7 @@ import Foundation
     var tutor: Person
     var vet: Person
     
-    init(name: String = "* please say my name *", tutor: Person, vet: Person) {
+    init(name: String, tutor: Person, vet: Person) {
         self.name = name
         self.tutor = tutor
         self.vet = vet
