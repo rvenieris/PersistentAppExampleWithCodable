@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A056FDF72BE9D68300927B38 /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A056FDF62BE9D68300927B38 /* PersonDetailView.swift */; };
 		BB715C792BE6F6E0005481A7 /* PersistentAppExampleWithCodableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB715C782BE6F6E0005481A7 /* PersistentAppExampleWithCodableApp.swift */; };
 		BB715C7B2BE6F6E0005481A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB715C7A2BE6F6E0005481A7 /* ContentView.swift */; };
 		BB715C7D2BE6F6E3005481A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB715C7C2BE6F6E3005481A7 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A056FDF62BE9D68300927B38 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
 		BB715C752BE6F6E0005481A7 /* PersistentAppExampleWithCodable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersistentAppExampleWithCodable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB715C782BE6F6E0005481A7 /* PersistentAppExampleWithCodableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentAppExampleWithCodableApp.swift; sourceTree = "<group>"; };
 		BB715C7A2BE6F6E0005481A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				BB715C782BE6F6E0005481A7 /* PersistentAppExampleWithCodableApp.swift */,
 				BB715C882BE6F740005481A7 /* HomeView.swift */,
 				BB715CB52BE91FB7005481A7 /* PetDetailView.swift */,
+				A056FDF62BE9D68300927B38 /* PersonDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB715C8F2BE6F764005481A7 /* Pet.swift in Sources */,
+				A056FDF72BE9D68300927B38 /* PersonDetailView.swift in Sources */,
 				BB715CB82BE923DF005481A7 /* Extensions.swift in Sources */,
 				BB715C942BE6F777005481A7 /* WeakObjectSet.swift in Sources */,
 				BB715C892BE6F740005481A7 /* HomeView.swift in Sources */,
