@@ -18,7 +18,6 @@ struct PersistentAppExampleWithCodableApp: App {
         
         WindowGroup {
             HomeView(application: application)
-
                 .onChange(of: scenePhase) {
                     switch scenePhase {
                     case .background:
@@ -27,6 +26,7 @@ struct PersistentAppExampleWithCodableApp: App {
                         } catch {
                             // Avisa pro usuário que ele se ferrou
                             print("Se ferrou!", error)
+                            // FIXME: Não sei se adianta muito avisar agora porque já estamos em background
                         }
                     case .inactive:
                         break

@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import CodableExtensions
+import struct SwiftUI.Binding
 
 @Observable 
 class ApplicationData: Codable {
@@ -20,6 +21,24 @@ class ApplicationData: Codable {
         self.pets = ApplicationData.defaultPets
     }
     
+//    @MainActor
+    func bindingForPet(withID id: Pet.ID) -> Binding<Pet>? {
+        Binding(
+            Binding<Pet?> {
+                self.pets.first(where: {$0.id == id})
+            } set: { (newValue: Pet?) in
+                guard let index = self.pets.firstIndex(where: { $0.id == id }) else {
+                    assertionFailure("Proposal not found on list while trying to set property")
+                    return
+                }
+                if let newValue {
+                    self.pets[index] = newValue
+                } else {
+                    self.pets.remove(atOffsets: [index])
+                }
+            }
+        )
+    }
     
     @discardableResult
     func cachePeopleFromPets()->Self {
